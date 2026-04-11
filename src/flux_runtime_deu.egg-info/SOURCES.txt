@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/flux_deu/__init__.py
+src/flux_deu/cli.py
+src/flux_deu/interpreter.py
+src/flux_deu/kasus.py
+src/flux_deu/trennverben.py
+src/flux_runtime_deu.egg-info/PKG-INFO
+src/flux_runtime_deu.egg-info/SOURCES.txt
+src/flux_runtime_deu.egg-info/dependency_links.txt
+src/flux_runtime_deu.egg-info/entry_points.txt
+src/flux_runtime_deu.egg-info/requires.txt
+src/flux_runtime_deu.egg-info/top_level.txt
+tests/test_interpreter_deu.py

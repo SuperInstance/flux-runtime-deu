@@ -1,0 +1,114 @@
+# FLUX-deu Wortschatz: Agent-zu-Agent Kommunikation (A2A)
+# Vokabeln für Multi-Agenten-Interaktion auf Deutsch
+
+@version 1.0
+@lang deu
+
+# ── Agent-Begriffe ────────────────────────────────────────────────────
+
+agent       NOUN   A2A_AGENT     agent
+system      NOUN   A2A_SYSTEM    system
+teilnehmer  NOUN   A2A_PARTICIPANT participant
+koordinator NOUN   A2A_COORD     coordinator
+beobachter  NOUN   A2A_OBSERVER  observer
+aufseher    NOUN   A2A_SUPERVISOR supervisor
+
+# ── Kommunikation ─────────────────────────────────────────────────────
+
+sage        VERB   A2A_TELL      tell
+frage       VERB   A2A_ASK       ask
+antworte    VERB   A2A_REPLY     reply
+berichte    VERB   A2A_REPORT    report
+benachrichtige VERB A2A_NOTIFY   notify
+warne       VERB   A2A_WARN      warn
+erkläre     VERB   A2A_EXPLAIN   explain
+bitte       VERB   A2A_REQUEST   request
+befehle     VERB   A2A_COMMAND   command
+rate        VERB   A2A_ADVISE    advise
+
+nachricht   NOUN   A2A_MESSAGE   message
+anfrage     NOUN   A2A_QUERY     query
+befehl      NOUN   A2A_ORDER     order
+aufgabe     NOUN   A2A_TASK      task
+antwort     NOUN   A2A_RESPONSE  response
+bericht     NOUN   A2A_REPORT    report
+benachrichtigung NOUN A2A_NOTIFICATION notification
+warnung     NOUN   A2A_WARNING   warning
+
+# ── Präpositionen für Agent-Beziehungen ───────────────────────────────
+
+nach        PREP   A2A_TOPIC     about/after
+über        PREP   A2A_ABOUT     about
+von         PREP   A2A_FROM      from
+an          PREP   A2A_TO        to
+mit         PREP   A2A_WITH      with
+für         PREP   A2A_FOR       for
+gegen       PREP   A2A_AGAINST   against
+ohne        PREP   A2A_WITHOUT   without
+
+# ── Kasus-Anwendung in A2A ────────────────────────────────────────────
+
+# Nominativ — Welcher Agent handelt? (Subjekt)
+#   Der Navigationsagent berechnet den Kurs.
+#   → Der Navigationsagent hat CAP_PUBLIC Sichtbarkeit
+
+# Akkusativ — Welcher Agent wird angesprochen? (Direktobjekt)
+#   Ich frage den Wetteragenten nach der Windrichtung.
+#   → Den Wetteragenten ist AKKUSATIV (read-write target)
+
+# Dativ — Welchem Agenten wird etwas mitgeteilt? (Indirektobjekt)
+#   Dem Koordinator sage ich das Ergebnis.
+#   → Dem Koordinator ist DATIV (reference access)
+
+# Genitiv — Wem gehört die Information? (Possessiv)
+#   Die Daten des Sensoragenten werden analysiert.
+#   → Des Sensoragenten ist GENITIV (capability transfer)
+
+# ── Vertrauensstufen ──────────────────────────────────────────────────
+
+vertrauen   NOUN   A2A_TRUST     trust
+berechtigung NOUN A2A_PERM      permission
+zugriff     NOUN   A2A_ACCESS    access
+erlaubnis   NOUN   A2A_ALLOW     permission
+verbot      NOUN   A2A_DENY     prohibition
+rolle       NOUN   A2A_ROLE     role
+
+# ── Agent-Lebenszyklus ────────────────────────────────────────────────
+
+erstellen   VERB   A2A_CREATE    create
+starten     VERB   A2A_START    start
+stoppen     VERB   A2A_STOP     stop
+pausieren   VERB   A2A_PAUSE    pause
+fortsetzen  VERB   A2A_RESUME   resume
+beenden     VERB   A2A_TERMINATE terminate
+zerstören   VERB   A2A_DESTROY  destroy
+
+zustand     NOUN   A2A_STATE    state
+aktiv       ADJ    A2A_ACTIVE   active
+inaktiv     ADJ    A2A_INACTIVE inactive
+beschäftigt ADJ    A2A_BUSY     busy
+bereit      ADJ    A2A_READY    ready
+
+# ── Getrennte Verben in A2A-Kontext ───────────────────────────────────
+
+# einrichten → richte ... ein — Agent initialisieren und konfigurieren
+# zusammenarbeiten → arbeite ... zusammen — Agenten koordinieren
+# zurückmelden → melde ... zurück — Ergebnis übermitteln
+# herausfinden → finde ... heraus — Information beschaffen
+# mitteilen → teile ... mit — Nachricht übermitteln
+# zustimmen → stimme ... zu — Zustimmung erteilen
+# absagen → sage ... ab — Anfrage ablehnen
+
+# ── Beispiel-Aufrufe ──────────────────────────────────────────────────
+
+# sage navigationsagent berechne kurs nach norden
+# → TELL navigationsagent "berechne kurs nach norden"
+
+# frage wetteragent nach windstärke
+# → ASK wetteragent "windstärke"
+
+# sage koordinator ergebnis ist 42
+# → TELL koordinator "ergebnis ist 42"
+
+# wenn wetteragent windstärke meldet dann stoppe schiff
+# → Nebensatz (V-final): deferred execution

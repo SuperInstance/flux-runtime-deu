@@ -1,0 +1,114 @@
+# FLUX-deu Wortschatz: Maritime Navigation
+# Seefahrts- und Navigationsbegriffe für die deutsch-sprachige NL-Programmierung
+
+@version 1.0
+@lang deu
+
+# ── Schiffsbewegung ───────────────────────────────────────────────────
+
+fahre       VERB   NAV_MOVE   sail/move
+segeln      VERB   NAV_MOVE   sail
+steuern     VERB   NAV_STEER  steer
+ankern      VERB   NAV_ANCHOR anchor
+ablegen     VERB   NAV_DEPART depart
+anlegen     VERB   NAV_ARRIVE arrive/dock
+stoppe      VERB   NAV_STOP   stop
+
+# ── Richtungen ─────────────────────────────────────────────────────────
+
+nord        NOUN   DIR_CARD   north
+süden       NOUN   DIR_CARD   south
+osten       NOUN   DIR_CARD   east
+westen      NOUN   DIR_CARD   west
+nordosten   NOUN   DIR_CARD   northeast
+nordwesten  NOUN   DIR_CARD   northwest
+südosten    NOUN   DIR_CARD   southeast
+südwesten  NOUN   DIR_CARD   southwest
+
+links       ADJ    DIR_REL    left (port/backbord)
+rechts      ADJ    DIR_REL    right (starboard/steuerbord)
+geradeaus   ADV    DIR_REL    straight ahead
+vorwärts    ADV    DIR_REL    forward
+rückwärts   ADV    DIR_REL    backward
+
+# ── Navigationsmessungen ──────────────────────────────────────────────
+
+kurs        NOUN   NAV_HEADING heading/course
+peilung     NOUN   NAV_BEARING bearing
+entfernung  NOUN   NAV_DIST   distance
+breitengrad NOUN   NAV_LAT    latitude
+längengrad  NOUN   NAV_LON    longitude
+höhe        NOUN   NAV_ALT    altitude
+tiefe       NOUN   NAV_DEPTH  depth
+
+grad        NOUN   UNIT_ANGLE degree
+minute      NOUN   UNIT_ANGLE arcminute
+sekunde     NOUN   UNIT_ANGLE arcsecond
+meile       NOUN   UNIT_DIST  nautical mile
+knoten      NOUN   UNIT_SPEED knot
+meter       NOUN   UNIT_DIST  meter
+kilometer   NOUN   UNIT_DIST  kilometer
+
+# ── Wetter und Bedingungen ────────────────────────────────────────────
+
+wind        NOUN   WIND       wind
+windstärke  NOUN   WIND_STR   wind strength
+windrichtung NOUN  WIND_DIR   wind direction
+welle       NOUN   WAVE       wave
+strömung    NOUN   CURRENT    current
+gezeit      NOUN   TIDE       tide
+flut        NOUN   TIDE_HIGH  high tide
+ebbe        NOUN   TIDE_LOW   low tide
+sicht       NOUN   VISIBILITY visibility
+
+sturm       NOUN   WEATHER_STORM storm
+nebel       NOUN   WEATHER_FOG   fog
+regen       NOUN   WEATHER_RAIN  rain
+
+# ── Schiffsteile ──────────────────────────────────────────────────────
+
+schiff      NOUN   VESSEL     ship
+boot        NOUN   VESSEL     boat
+ruder       NOUN   PART_STEER rudder
+segel       NOUN   PART_SAIL  sail
+mast        NOUN   PART_MAST  mast
+bug         NOUN   PART_BOW   bow
+heck        NOUN   PART_STERN stern
+backbord    NOUN   SIDE_PORT  port side
+steuerbord  NOUN   SIDE_STAR  starboard
+
+# ── Maritime Aktionen ─────────────────────────────────────────────────
+
+abdocken    VERB   ACTION_UNDOCK undock
+andocken    VERB   ACTION_DOCK   dock
+überholen   VERB   ACTION_OVERTAKE overtake
+kreuzen     VERB   ACTION_CRUISE  cruise
+lotsen      VERB   ACTION_PILOT   pilot
+schleppen   VERB   ACTION_TOW     tow
+bergung     NOUN   ACTION_RESCUE  rescue
+warnung     NOUN   ALERT_WARN     warning
+gefahr      NOUN   ALERT_DANGER   danger
+notfall     NOUN   ALERT_EMERGENCY emergency
+
+# ── Nachrichtenwesen ──────────────────────────────────────────────────
+
+funk        NOUN   COMM_RADIO  radio
+nachricht   NOUN   COMM_MSG    message
+signal      NOUN   COMM_SIGNAL signal
+antwort     NOUN   COMM_REPLY  reply
+rufzeichen  NOUN   COMM_CALL   call sign
+kanal       NOUN   COMM_CHAN   channel
+
+# ── Kasus-Beispiele (maritim) ────────────────────────────────────────
+
+# Nominativ (öffentlich sichtbar)
+#   Das Schiff fährt nach Norden. — Schiff ist im öffentlichen Geltungsbereich
+
+# Akkusativ (direkter Einwirkungsbereich)
+#   Den Kurs ändere ich auf null-null-fünf. — Kurs ist Lese-Schreib-Ziel
+
+# Dativ (indirekter Zugriff)
+#   Dem Navigationsgerät vertraue ich. — NavGerät ist Referenzquelle
+
+# Genitiv (Besitz/Eigentum)
+#   Die Koordinaten des Hafens werden geladen. — Hafen besitzt Koordinaten

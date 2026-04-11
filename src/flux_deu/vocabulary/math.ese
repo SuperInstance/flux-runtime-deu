@@ -1,0 +1,115 @@
+# FLUX-deu Wortschatz: Mathematik
+# Mathematische Vokabeln für die deutsch-sprachige NL-Programmierung
+
+@version 1.0
+@lang deu
+
+# ── Grundrechenarten ──────────────────────────────────────────────────
+
+# Addition
+berechne    VERB   MATH_OP    compute
+plus        CONJ   MATH_BIN   +
+addiere     VERB   MATH_OP    add
+summieren   VERB   MATH_OP    sum
+addition    NOUN   MATH_OP    addition
+
+# Subtraktion
+minus       CONJ   MATH_BIN   -
+subtrahiere VERB   MATH_OP    subtract
+subtraktion NOUN   MATH_OP    subtraction
+
+# Multiplikation
+mal         CONJ   MATH_BIN   *
+multipliziere VERB MATH_OP    multiply
+multiplikation NOUN MATH_OP  multiplication
+produkt     NOUN   MATH_VAL  product
+
+# Division
+durch       CONJ   MATH_BIN   /
+dividiere   VERB   MATH_OP    divide
+division    NOUN   MATH_OP    division
+quotient    NOUN   MATH_VAL  quotient
+rest        NOUN   MATH_VAL  remainder
+
+# ── Zahlen und Bereiche ───────────────────────────────────────────────
+
+zahl        NOUN   MATH_VAL  number
+ganzzahl    NOUN   MATH_TYPE integer
+kommazahl   NOUN   MATH_TYPE float
+bruch       NOUN   MATH_TYPE fraction
+
+summe       NOUN   MATH_AGG  sum
+durchschnitt NOUN MATH_AGG   average
+minimum     NOUN   MATH_AGG  minimum
+maximum     NOUN   MATH_AGG  maximum
+mittelwert  NOUN   MATH_AGG  mean
+
+bereich     NOUN   MATH_RANGE range
+von         PREP   RANGE_START from
+bis         PREP   RANGE_END   to
+
+# ── Spezielle Funktionen ──────────────────────────────────────────────
+
+fakultät    NOUN   MATH_FUNC  factorial
+potenz      NOUN   MATH_FUNC  power
+wurzel      NOUN   MATH_FUNC  root
+logarithmus NOUN   MATH_FUNC  logarithm
+sinus       NOUN   MATH_FUNC  sine
+kosinus     NOUN   MATH_FUNC  cosine
+tangens     NOUN   MATH_FUNC  tangent
+
+# ── Vergleiche ─────────────────────────────────────────────────────────
+
+ist         VERB   COMPARE    is
+gleich      ADJ    COMPARE_EQ equals
+größer      ADJ    COMPARE_GT greater
+kleiner     ADJ    COMPARE_LT less
+als         CONJ   COMPARE    than
+
+# ── Register und Speicher ─────────────────────────────────────────────
+
+register    NOUN   STORE_REG  register
+speicher    NOUN   STORE_MEM  memory
+variable    NOUN   STORE_VAR  variable
+wert        NOUN   STORE_VAL  value
+lade        VERB   STORE_LOAD load
+speichere   VERB   STORE_SAVE store
+
+# ── Deutsche Zahlwörter ───────────────────────────────────────────────
+
+null        NUM    DIGIT      0
+eins        NUM    DIGIT      1
+zwei        NUM    DIGIT      2
+drei        NUM    DIGIT      3
+vier        NUM    DIGIT      4
+fünf        NUM    DIGIT      5
+sechs       NUM    DIGIT      6
+sieben      NUM    DIGIT      7
+acht        NUM    DIGIT      8
+neun        NUM    DIGIT      9
+zehn        NUM    DIGIT      10
+elf         NUM    DIGIT      11
+zwölf       NUM    DIGIT      12
+zwanzig     NUM    DIGIT      20
+hundert     NUM    DIGIT      100
+tausend     NUM    DIGIT      1000
+
+# ── Steuerung ─────────────────────────────────────────────────────────
+
+wenn        CONJ   CTRL_IF    if
+sonst       CONJ   CTRL_ELSE  else
+solange     CONJ   CTRL_WHILE while
+wiederhole  VERB   CTRL_LOOP  repeat
+bis         CONJ   CTRL_UNTIL until
+für         PREP   CTRL_FOR   for
+jeder       DET   CTRL_FOR_EACH each
+mache       VERB   CTRL_DO    do
+then        # "dann" nicht benötigt — Verbposition regelt Ablauf
+
+# ── Ausgabe ───────────────────────────────────────────────────────────
+
+zeige       VERB   IO_PRINT   show
+gib         VERB   IO_PRINT   give
+aus         PART   IO_PRINT   out
+drucke      VERB   IO_PRINT   print
+ergebnis    NOUN   IO_RESULT  result
