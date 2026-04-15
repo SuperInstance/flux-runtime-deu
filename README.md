@@ -2,6 +2,9 @@
 
 > Deutsch-zuerst NL-Laufzeitumgebung mit Kasus-basierter Zugriffssteuerung.
 
+> **This is the German (Deutsch) localization of [flux-runtime](https://github.com/SuperInstance/flux-runtime).**
+> FLUX-deu is part of the FLUX internationalization fleet — a German-first NL runtime for the FLUX universal bytecode VM, mapping the four-case system to capability-based access control, verb position to execution ordering, and separable verbs to continuation patterns.
+
 **FLUX-deu** ist eine Neukonzeption der FLUX-Laufzeitumgebung, bei der die deutsche Grammatik die Architektur grundlegend prägt. Die vier Kasus steuern den Zugriff, die Verbposition bestimmt die Ausführungsreihenfolge, und getrennte Verben erzeugen Fortsetzungs­muster in der Bytecode-Ebene.
 
 ---
@@ -189,3 +192,7 @@ flux-runtime-deu/
 ## Lizenz
 
 MIT
+
+---
+
+<img src="callsign1.jpg" width="128" alt="callsign">
